@@ -1,0 +1,59 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/loading.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.loading_image__0mxH5{
+    margin: auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/main.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.main_main__UzXvh{
+    display: flex;
+    min-height: 70vh;
+    padding: 20px 0 20px 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    background-color: #e7e5f8;
+}
+
+.main_card__hWw2V{
+    height: 450px;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0,0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #d6d8ff;
+    margin: 20px;
+}
+
+.main_button__IZiVa{
+    font-family:'Times New Roman', 'Times', 'serif';
+    background-color: #a7bcff;
+}
+
+.main_image__8f_et{
+    height: 200px;
+    width: 200px;
+}
+
+.main_img__mstpT{
+    top: 0;
+    display: flex;
+}
+
+.main_paragrafo__lWUtR{
+    font-size: 10px;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/serverError.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.serverError_h2__Rhf_0{
+    text-align: center;
+    justify-content: center;
+}
