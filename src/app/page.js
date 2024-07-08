@@ -1,12 +1,6 @@
-import Image from "next/image";
-import "./styles.css";
-import Link from "next/link";
-
-export default function Home() {
-
+import Main from './Main'
+export default async function Home() {
   return (
-    <main>
-     
-    </main>
+    <Main/>
   );
 }

@@ -1,0 +1,40 @@
+.main{
+    display: flex;
+    min-height: 70vh;
+    padding: 20px 0 20px 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    background-color: #e7e5f8;
+}
+
+.card{
+    height: 450px;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0,0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #d6d8ff;
+    margin: 20px;
+}
+
+.button{
+    font-family:'Times New Roman', 'Times', 'serif';
+    background-color: #a7bcff;
+}
+
+.image{
+    height: 200px;
+    width: 200px;
+}
+
+.img{
+    top: 0;
+    display: flex;
+}
+
+.paragrafo{
+    font-size: 10px;
+}
