@@ -7,10 +7,26 @@ import styles from "./main.module.css";
 import ServerError from "./ServerError";
 
 export default function Main() {
+    const [listProduct, setListProduct] = useState([]);
+    const [listComplete, setListComplete] = useState([]);
+    const [textSearch, setTextSearch] = useState("");
+    const [isError, setIsError] = useState(false);  
 
-    if(listComplete[0] == null){
-      return <Spinner/>
-    }
+    useEffect(() => {
+        const getProduct = async () => {
+          try{
+          const response = await fetch("https://localhost:3000/api");
+          const data = await response.json();
+          setListProduct(data);
+          setListComplete(data);
+          }
+          catch{
+            setIsError(true);
+          }
+        }
+        getProduct();
+      }, []);
+      
         return (
           <>
            <div className={styles.filters}>
