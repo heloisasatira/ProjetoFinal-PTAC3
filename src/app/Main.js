@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Spinner from "./Spinner";
+import Loading from "./Loading";
 import Link from "next/link";
 import styles from "./main.module.css";
 import ServerError from "./ServerError";
@@ -26,7 +26,27 @@ export default function Main() {
         }
         getProduct();
       }, []);
-      
+
+      const search = (text) =>{
+        setTextSearch(text);
+      //se o texto que o usuário digitou estiver vazio, retornar a lista de produtos completa novamente
+        if (text.trim() == ""){
+          setListProduct(listComplete);
+          return
+        }
+      const newList = listProduct.filter((product) => 
+      product.title.toUpperCase().trim().includes(textSearch.toUpperCase())
+      );
+      setListProduct(newList);
+    }
+//caso o servidor esteja falhando, retornar o componente ServerError
+    if(isError == true){
+      return <ServerError/>
+    }
+
+    if(listComplete[0] == null){
+      return <Loading/>
+    }
         return (
           <>
            <div className={styles.filters}>
