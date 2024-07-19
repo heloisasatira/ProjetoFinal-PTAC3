@@ -19,7 +19,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    background-color: #e7e5f8;
+    background-color: #ffdef1;
 }
 
 .main_card__hWw2V{
@@ -28,7 +28,7 @@
     box-shadow: 0 4px 8px 0 rgba(0,0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    background-color: #d6d8ff;
+    background-color: #eac3e7;
     margin: 20px;
 }
 
@@ -50,6 +50,7 @@
 .main_paragrafo__lWUtR{
     font-size: 10px;
 }
+
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/serverError.module.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************/

@@ -1,0 +1,50 @@
+.rodape {
+    background-color: #dd9ebc;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .socialLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .socialLinks li {
+    margin: 0;
+  }
+  
+  .socialLinks a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .socialLinks i {
+    font-size: 24px;
+  }
+  
+  .info {
+    margin-top: 10px;
+  }
+  
+  .info p {
+    margin: 5px 0;
+  }
+
+  .img{
+    text-align: left;
+    justify-content: left;
+    }

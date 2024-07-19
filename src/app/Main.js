@@ -14,7 +14,7 @@ export async function GET(req) {
   let objeto = null;
   listaDeLivros.forEach((obj) => {
     if (obj.id === id) {
-      objeto = obj; // Correção aqui
+      objeto = obj;
     }
   });
   return NextResponse.json(objeto);
@@ -43,13 +43,19 @@ export default function Main() {
 
   const search = (text) => {
     setTextSearch(text);
+    // Se o texto que o usuário digitou estiver vazio, retornar a lista de produtos completa novamente
     if (text.trim() === "") {
       setListProduct(listComplete);
       return;
     }
-    const newList = listComplete.filter((product) =>
-      product.title.toUpperCase().trim().includes(text.toUpperCase())
-    );
+    const newList = listComplete.filter((product) => {
+      // Verifica se o título existe e é uma string antes de chamar toUpperCase()
+      return (
+        product.titulo &&
+        typeof product.titulo === "string" &&
+        product.titulo.toUpperCase().trim().includes(text.toUpperCase())
+      );
+    });
     setListProduct(newList);
   };
 
@@ -77,11 +83,11 @@ export default function Main() {
           <div className={styles.card} key={produto.id}>
             <br />
             <Image
-              src={produto.image}
-              className={styles.image}
-              alt={produto.title}
+              src={produto.imagem}
+              className={styles.imagem}
+              alt={produto.titulo}
               width={150}
-              height={150}
+              height={200}
             />
             <h3>{produto.titulo}</h3>
             <p>{produto.autor}</p>
@@ -90,7 +96,7 @@ export default function Main() {
             <p>Gênero: {produto.genero}</p>
 
             <Link href={"/product/" + produto.id}>
-              <button>Ver mais</button>
+              <button class="button">Ver mais</button>
             </Link>
           </div>
         ))}

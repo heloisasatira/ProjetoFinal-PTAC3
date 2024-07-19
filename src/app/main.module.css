@@ -7,7 +7,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    background-color: #e7e5f8;
+    background-color: #ffdef1;
 }
 
 .card{
@@ -16,7 +16,7 @@
     box-shadow: 0 4px 8px 0 rgba(0,0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    background-color: #d6d8ff;
+    background-color: #eac3e7;
     margin: 20px;
 }
 
